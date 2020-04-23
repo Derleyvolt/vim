@@ -1,3 +1,7 @@
+"static config
+
+"how find vimrc folder: edit $HOME/.vimrc
+
 set number
 set tabstop=4
 set shiftwidth=4
@@ -8,9 +12,7 @@ set smartindent
 set expandtab
 set showcmd
 set ruler
-set syntax=cpp
-colorscheme default
-set background=light
+set background=dark
 
 "keys
  
