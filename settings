@@ -1,8 +1,8 @@
 " =========================================================================================================
-" |                                            General Settings                                            |
+" |                                            General Settings                                           |
 " =========================================================================================================
 
-"How find vimrc folder: edit $HOME/.vimrc
+" Tip: How find vimrc folder: edit $HOME/.vimrc
 
 " ---------------------------------------------------------
 " ALLOW BACKSPACE IN INSERT MODE
@@ -16,11 +16,11 @@ set backspace+=start
 " TAB CONFIGURATIONS 
 " --------------------------------------------------------- 
 
-set tabstop     =4  "
-set shiftwidth  =4  " 
-set softtabstop =4  " TAB configs
-set smarttab        "
-set expandtab       "
+set tabstop     = 4 
+set shiftwidth  = 4  
+set softtabstop = 4  
+set smarttab      
+set expandtab       
 
 " ---------------------------------------------------------
 " MISCELLANEOUS
