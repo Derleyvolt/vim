@@ -1,15 +1,20 @@
-" ===================================================================
-" | General Settings                                                |
-" ===================================================================
+" =========================================================================================================
+" |                                            General Settings                                            |
+" =========================================================================================================
 
 "How find vimrc folder: edit $HOME/.vimrc
 
-set backspace=indent   " 
-set backspace+=eol     "  Allow backspace in insert mode
-set backspace+=start   " 
+" ---------------------------------------------------------
+" ALLOW BACKSPACE IN INSERT MODE
+" --------------------------------------------------------- 
 
-set number          " Show line numbers
-syntax on           " Enable syntax highlight
+set backspace=indent   
+set backspace+=eol   
+set backspace+=start 
+
+" ---------------------------------------------------------
+" TAB CONFIGURATIONS 
+" --------------------------------------------------------- 
 
 set tabstop     =4  "
 set shiftwidth  =4  " 
@@ -17,15 +22,21 @@ set softtabstop =4  " TAB configs
 set smarttab        "
 set expandtab       "
 
-set autoindent
-set smartindent
-set showcmd
-set ruler
-set background = dark
+" ---------------------------------------------------------
+" MISCELLANEOUS
+" --------------------------------------------------------- 
 
-" ===================================================================
-" | Custom Key Mappings                                             |
-" ===================================================================
+set number      
+syntax on   
+set autoindent           
+set smartindent     
+set showcmd               
+set showmode            
+set background = dark       
+
+" ---------------------------------------------------------
+" CUSTOM KEY MAPPINGS
+" --------------------------------------------------------- 
 
 nmap r A
 nmap q G
@@ -47,7 +58,9 @@ nmap <C-s> :w<CR>
 vmap <c-c> 99999Y
 nnoremap <C-a> ggVG
 
-"Competitive programming template
+" ---------------------------------------------------------
+" COMPETITIVE PROGRAMMING TEMPLATE
+" --------------------------------------------------------- 
 
 imap STAR #include <bits/stdc++.h><CR><CR>using namespace std;
 \ <CR><CR>#define fi             first
