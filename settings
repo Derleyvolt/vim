@@ -1,21 +1,32 @@
-"static config
+" ===================================================================
+" | General Settings                                                |
+" ===================================================================
 
-"how find vimrc folder: edit $HOME/.vimrc
+"How find vimrc folder: edit $HOME/.vimrc
 
-set number
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set smarttab
+set backspace=indent   " 
+set backspace+=eol     "  Allow backspace in insert mode
+set backspace+=start   " 
+
+set number          " Show line numbers
+syntax on           " Enable syntax highlight
+
+set tabstop     =4  "
+set shiftwidth  =4  " 
+set softtabstop =4  " TAB configs
+set smarttab        "
+set expandtab       "
+
 set autoindent
 set smartindent
-set expandtab
 set showcmd
 set ruler
-set background=dark
+set background = dark
 
-"keys
- 
+" ===================================================================
+" | Custom Key Mappings                                             |
+" ===================================================================
+
 nmap r A
 nmap q G
 nmap e ^i
