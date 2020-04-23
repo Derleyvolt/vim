@@ -1,1 +1,37 @@
+"keys
+ 
+nmap r A
+nmap q G
+nmap e ^i
+nmap b u
+nnoremap d D
+nmap c yy
+nmap v p
+nnoremap <space> dd
+imap <c-@> <esc>
+inoremap {<CR> {<CR>}<Esc>i<CR><Esc>ki<Tab>
+map <c-c> :set relativenumber!<CR>
+nmap <Tab> a
+nmap <CR> i<CR>
+nmap <C-Down>  <C-e>
+nmap <C-Up>    <C-y>
+nmap t :t.<CR>
+nmap <C-s> :w<CR>
+vmap <c-c> 99999Y
+nnoremap <C-a> ggVG
 
+"Competitive programming template
+
+imap STAR #include <bits/stdc++.h><CR><CR>using namespace std;
+\ <CR><CR>#define fi             first
+\ <CR>#define sec            second
+\ <CR>#define vi             vector<int>
+\ <CR>#define pb             push_back
+\ <CR>#define mp             make_pair
+\ <CR>#define debug(x)         cout << x << "\n";
+\ <CR>#define all(cont)        cont.begin(), cont.end()
+\ <CR>#define forn(i, n)       for(int i=0; i<int(n); i++)
+\ <CR>#define rfor(i, r)       for(auto& i:r)
+\ <CR><CR>int main() {<CR>ios_base::sync_with_stdio(false);
+\ <CR>cin.tie(NULL);
+\ <CR>freopen("in.txt", "r", stdin);<CR><CR>return 0;<Up><Tab>
