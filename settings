@@ -2,7 +2,7 @@
 " |                                            General Settings                                           |
 " =========================================================================================================
 
-" Tip: How find vimrc folder: edit $HOME/.vimrc
+" Tip: How find vimrc folder in linux: edit $HOME/.vimrc
 
 " ---------------------------------------------------------
 " ALLOW BACKSPACE IN INSERT MODE
