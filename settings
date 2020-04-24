@@ -2,7 +2,35 @@
 " |                                            General Custom Settings                                    |
 " =========================================================================================================
 
+" ---------------------------------------------------------
+" Vundle and Plugins                                      |
+" --------------------------------------------------------- 
+
 " Tip: How find vimrc folder in linux: edit $HOME/.vimrc
+
+set nocompatible
+
+filetype plugin indent off
+syntax off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+" to install a plugin add it here and run :PluginInstall.
+" to update the plugins run :PluginInstall! or :PluginUpdate
+" to delete a plugin remove it here and run :PluginClean
+
+Plugin 'bling/vim-airline'
+"Plugin 'Valloric/YouCompleteMe'
+
+" add plugins before this
+call vundle#end()
+
+filetype plugin indent on
+syntax on
 
 " ---------------------------------------------------------
 " ALLOW BACKSPACE IN INSERT MODE (because linux terminal) |
