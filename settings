@@ -1,11 +1,11 @@
 " =========================================================================================================
-" |                                            General Settings                                           |
+" |                                            General Custom Settings                                    |
 " =========================================================================================================
 
 " Tip: How find vimrc folder in linux: edit $HOME/.vimrc
 
 " ---------------------------------------------------------
-" ALLOW BACKSPACE IN INSERT MODE
+" ALLOW BACKSPACE IN INSERT MODE                          |
 " --------------------------------------------------------- 
 
 set backspace=indent   
@@ -13,7 +13,7 @@ set backspace+=eol
 set backspace+=start 
 
 " ---------------------------------------------------------
-" TAB CONFIGURATIONS 
+" TAB CONFIGURATIONS                                      |
 " --------------------------------------------------------- 
 
 set tabstop     = 4 
@@ -23,7 +23,7 @@ set smarttab
 set expandtab       
 
 " ---------------------------------------------------------
-" MISCELLANEOUS
+" MISCELLANEOUS                                           |
 " --------------------------------------------------------- 
 
 set number      
@@ -31,11 +31,11 @@ syntax on
 set autoindent           
 set smartindent     
 set showcmd               
-set showmode            
+set showmode!         " disable showmode because bar visual plugin..            
 set background = dark       
 
 " ---------------------------------------------------------
-" CUSTOM KEY MAPPINGS
+" CUSTOM KEY MAPPINGS                                     |
 " --------------------------------------------------------- 
 
 nmap r A
@@ -59,7 +59,7 @@ vmap <c-c> 99999Y
 nnoremap <C-a> ggVG
 
 " ---------------------------------------------------------
-" COMPETITIVE PROGRAMMING TEMPLATE
+" COMPETITIVE PROGRAMMING TEMPLATE                        |
 " --------------------------------------------------------- 
 
 imap STAR #include <bits/stdc++.h><CR><CR>using namespace std;
