@@ -59,10 +59,11 @@ set expandtab
 
 set number      
 syntax on   
+set noswapfile        " avoid boring message about swap file bla bla bla..
 set autoindent           
 set smartindent     
 set showcmd               
-set showmode!         " disable showmode because bar visual plugin..            
+set showmode!         " disable showmode because bar visual plugin           
 set background = dark       
 
 " ---------------------------------------------------------
