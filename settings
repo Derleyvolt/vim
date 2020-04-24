@@ -5,7 +5,7 @@
 " Tip: How find vimrc folder in linux: edit $HOME/.vimrc
 
 " ---------------------------------------------------------
-" ALLOW BACKSPACE IN INSERT MODE                          |
+" ALLOW BACKSPACE IN INSERT MODE (because linux terminal) |
 " --------------------------------------------------------- 
 
 set backspace=indent   
