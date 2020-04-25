@@ -79,8 +79,10 @@ nmap c yy
 nmap v p
 nnoremap <space> dd
 imap <c-@> <esc>
+nmap <c-@> a
 inoremap {<CR> {<CR>}<Esc>i<CR><Esc>ki<Tab>
-map <c-c> :set relativenumber!<CR>
+nmap <silent> w :set relativenumber!<CR>
+map <c-c> <esc> :set relativenumber!<CR>
 nmap <Tab> a
 nmap <CR> i<CR>
 nmap <C-Down>  <C-e>
@@ -91,6 +93,8 @@ vmap <c-c> 99999Y
 nnoremap <C-a> ggVG
 nmap cls 1q 9999dd
 imap <c-f> <c-n>
+nmap sh :sh<CR>
+nnoremap ss :w<CR>
 
 " ---------------------------------------------------------
 " COMPETITIVE PROGRAMMING TEMPLATE                        |
