@@ -90,6 +90,7 @@ nmap <C-s> :w<CR>
 vmap <c-c> 99999Y
 nnoremap <C-a> ggVG
 nmap cls 1q 9999dd
+imap <c-f> <c-n>
 
 " ---------------------------------------------------------
 " COMPETITIVE PROGRAMMING TEMPLATE                        |
