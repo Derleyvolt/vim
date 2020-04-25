@@ -96,6 +96,9 @@ imap <c-f> <c-n>
 nmap sh :sh<CR>
 nnoremap ss :w<CR>
 
+"nagivate between splits window
+nmap <c-w> <c-w><c-w>
+
 " ---------------------------------------------------------
 " COMPETITIVE PROGRAMMING TEMPLATE                        |
 " --------------------------------------------------------- 
