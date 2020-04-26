@@ -25,6 +25,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'preservim/nerdtree'
 "Plugin 'Valloric/YouCompleteMe'
 
 " add plugins before this
