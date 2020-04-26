@@ -48,9 +48,9 @@ set backspace+=start
 " TAB CONFIGURATIONS                                      |
 " --------------------------------------------------------- 
 
-set tabstop     = 4 
-set shiftwidth  = 4  
-set softtabstop = 4  
+set tabstop=4 
+set shiftwidth=4  
+set softtabstop=4  
 set smarttab      
 set expandtab       
 
@@ -65,7 +65,7 @@ set autoindent
 set smartindent     
 set showcmd               
 set showmode!         " disable showmode because bar visual plugin           
-set background = dark       
+set background=dark       
 
 " ---------------------------------------------------------
 " CUSTOM KEY MAPPINGS                                     |
