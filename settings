@@ -98,6 +98,8 @@ nnoremap ss :w<CR>
 
 "nagivate between splits window
 nmap <c-w> <c-w><c-w>
+nmap nt :NERDTreeToggle<CR>
+
 
 " ---------------------------------------------------------
 " COMPETITIVE PROGRAMMING TEMPLATE                        |
