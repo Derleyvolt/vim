@@ -34,7 +34,7 @@ call vundle#end()
 filetype plugin indent on
 syntax on
 
-colorscheme tender
+colorscheme gruvbox
 
 " ---------------------------------------------------------
 " ALLOW BACKSPACE IN INSERT MODE (because linux terminal) |
@@ -59,7 +59,7 @@ set expandtab
 " --------------------------------------------------------- 
 
 set number      
-syntax on   
+set autochdir         " allow the shell to open in the current directory path of the file
 set noswapfile        " avoid boring message about swap file bla bla bla..
 set autoindent           
 set smartindent     
@@ -99,7 +99,7 @@ nnoremap ss :w<CR>
 
 "nagivate between splits window
 nmap <c-w> <c-w><c-w>
-nmap nt :NERDTreeToggle<CR>
+nmap <silent> nn :NERDTreeToggle<CR>
 
 
 " ---------------------------------------------------------
