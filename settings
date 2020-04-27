@@ -25,6 +25,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
+" press r to refresh current directory or R to refresh root directory.
+" press m to open menu in NERDtree
 Plugin 'preservim/nerdtree'
 "Plugin 'Valloric/YouCompleteMe'
 
