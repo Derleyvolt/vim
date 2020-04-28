@@ -91,10 +91,9 @@ nmap <CR> i<CR>
 nmap <C-Down>  <C-e>
 nmap <C-Up>    <C-y>
 nmap t :t.<CR>
-nmap <C-s> :w<CR>
 vmap <c-c> 99999Y
 nnoremap <C-a> ggVG
-nmap cls 1q 9999dd
+nmap cls 1q 9999D
 imap <c-f> <c-n>
 nmap sh :sh<CR>
 nnoremap ss :w<CR>
@@ -102,7 +101,7 @@ nnoremap ss :w<CR>
 "nagivate between splits window
 nmap <c-w> <c-w><c-w>
 nmap <silent> nn :NERDTreeToggle<CR>
-
+nnoremap d diw
 
 " ---------------------------------------------------------
 " COMPETITIVE PROGRAMMING TEMPLATE                        |
