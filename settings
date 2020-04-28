@@ -73,35 +73,37 @@ set background=dark
 " CUSTOM KEY MAPPINGS                                     |
 " --------------------------------------------------------- 
 
-nmap r A
-nmap q G
-nmap e ^i
-nmap b u
+nnoremap r A
+nnoremap q G
+nnoremap e ^i
+nnoremap b u
 nnoremap d D
-nmap c yy
-nmap v p
+nnoremap c yy
+nnoremap v p
 nnoremap <space> dd
-imap <c-@> <esc>
-nmap <c-@> a
+inoremap <c-@> <esc>
+nnoremap <c-@> a
 inoremap {<CR> {<CR>}<Esc>i<CR><Esc>ki<Tab>
-nmap <silent> w :set relativenumber!<CR>
-map <c-c> <esc> :set relativenumber!<CR>
-nmap <Tab> a
-nmap <CR> i<CR>
-nmap <C-Down>  <C-e>
-nmap <C-Up>    <C-y>
-nmap t :t.<CR>
-vmap <c-c> 99999Y
+nnoremap <silent> w :set relativenumber!<CR>
+nnoremap <Tab> i
+nnoremap <CR> i<CR>
+nnoremap <C-Down>  <C-e>
+nnoremap <C-Up>    <C-y>
+nnoremap t :t.<CR>
+vnoremap <c-c> 99999Y
 nnoremap <C-a> ggVG
-nmap cls 1q 9999D
-imap <c-f> <c-n>
-nmap sh :sh<CR>
+nmap clear 1q 9999D
+inoremap <c-f> <c-n>
+nnoremap sh :sh<CR>
 nnoremap ss :w<CR>
-
-"nagivate between splits window
-nmap <c-w> <c-w><c-w>
-nmap <silent> nn :NERDTreeToggle<CR>
 nnoremap d diw
+map i <nop>
+
+" Nagivate between splits window
+nnoremap <c-w> <c-w><c-w>
+
+" NerdTree window toggle
+nnoremap <silent> nn :NERDTreeToggle<CR>
 
 " ---------------------------------------------------------
 " COMPETITIVE PROGRAMMING TEMPLATE                        |
