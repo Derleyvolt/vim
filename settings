@@ -87,8 +87,8 @@ inoremap {<CR> {<CR>}<Esc>i<CR><Esc>ki<Tab>
 nnoremap <silent> w :set relativenumber!<CR>
 nnoremap <Tab> i
 nnoremap <CR> i<CR>
-nnoremap <C-Down>  <C-e>
-nnoremap <C-Up>    <C-y>
+" to scroll-down press <c-e>
+nnoremap <C-r>    <C-y>
 nnoremap t :t.<CR>
 vnoremap <c-c> 99999Y
 nnoremap <C-a> ggVG
