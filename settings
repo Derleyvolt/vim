@@ -81,14 +81,15 @@ nnoremap d D
 nnoremap c yy
 nnoremap v p
 nnoremap <space> dd
+" windows
+" inoremap <c-space> <esc>
+" nnoremap <c-space> a
 inoremap <c-@> <esc>
 nnoremap <c-@> a
 inoremap {<CR> {<CR>}<Esc>i<CR><Esc>ki<Tab>
 nnoremap <silent> w :set relativenumber!<CR>
 nnoremap <Tab> i
 nnoremap <CR> i<CR>
-" to scroll-down press <c-e>
-nnoremap <C-r>    <C-y>
 nnoremap t :t.<CR>
 vnoremap <c-c> 99999Y
 nnoremap <C-a> ggVG
@@ -98,6 +99,16 @@ nnoremap sh :sh<CR>
 nnoremap ss :w<CR>
 nnoremap d diw
 map i <nop>
+
+" Moving through the editor
+
+ nnoremap I <c-y>
+ nnoremap K <c-e>
+ nnoremap L w
+ nnoremap J b
+ nnoremap i k
+ nnoremap j h
+ nnoremap k j
 
 " Nagivate between splits window
 nnoremap <c-w> <c-w><c-w>
