@@ -120,16 +120,17 @@ nnoremap <silent> nn :NERDTreeToggle<CR>
 " COMPETITIVE PROGRAMMING TEMPLATE                        |
 " --------------------------------------------------------- 
 
-imap STAR #include <bits/stdc++.h><CR><CR>using namespace std;
-\ <CR><CR>#define fi             first
-\ <CR>#define sec            second
-\ <CR>#define vi             vector<int>
-\ <CR>#define pb             push_back
-\ <CR>#define mp             make_pair
-\ <CR>#define debug(x)         cout << x << "\n";
-\ <CR>#define all(cont)        cont.begin(), cont.end()
-\ <CR>#define forn(i, n)       for(int i=0; i<int(n); i++)
-\ <CR>#define rfor(i, r)       for(auto& i:r)
+imap STAR #include <bits/stdc++.h><CR><CR>using namespace std; <CR>
+\ <CR>#define fi                  first
+\ <CR>#define sec                 second
+\ <CR>#define vi                  vector<int>
+\ <CR>#define pb                  push_back
+\ <CR>#define mp                  make_pair
+\ <CR>#define debug(x)            cout << x << "\n";
+\ <CR>#define all(cont)           cont.begin(), cont.end()
+\ <CR>#define forn(i, n)          for(int i=0; i<int(n); i++)
+\ <CR>#define fori(i, n, index)   for(int i=index; i<int(n); i++)
+\ <CR>#define rfor(i, r)          for(auto& i:r)
 \ <CR><CR>int main() {<CR>ios_base::sync_with_stdio(false);
 \ <CR>cin.tie(NULL);
 \ <CR>freopen("in.txt", "r", stdin);<CR><CR>return 0;<Up><Tab>
