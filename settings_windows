@@ -1,0 +1,102 @@
+    " =========================================================================================================
+" |                                            General Custom Settings                                    |
+" =========================================================================================================
+
+" ---------------------------------------------------------
+" Vundle and Plugins                                      |
+" --------------------------------------------------------- 
+
+" Tip: How find vimrc folder in linux: edit $HOME/.vimrc
+
+syntax on
+colo default
+set syntax=cpp
+
+" ---------------------------------------------------------
+" ALLOW BACKSPACE IN INSERT MODE (because linux terminal) |
+" --------------------------------------------------------- 
+
+set backspace=indent   
+set backspace+=eol   
+set backspace+=start 
+
+" ---------------------------------------------------------
+" TAB CONFIGURATIONS                                      |
+" --------------------------------------------------------- 
+
+set tabstop=4 
+set shiftwidth=4  
+set softtabstop=4  
+set smarttab      
+set expandtab       
+
+" ---------------------------------------------------------
+" MISCELLANEOUS                                           |
+" --------------------------------------------------------- 
+
+set clipboard=unnamed
+set clipboard=unnamedplus
+
+set number      
+set autochdir         " allow the shell to open in the current directory path of the file
+set noswapfile        " avoid boring message about swap file bla bla bla..
+set autoindent           
+set smartindent     
+set showcmd               
+set showmode!         " disable showmode because bar visual plugin           
+set background=light
+
+" ---------------------------------------------------------
+" CUSTOM KEY MAPPINGS                                     |
+" --------------------------------------------------------- 
+
+nnoremap r A
+nnoremap q G
+nnoremap e ^i
+nnoremap b u
+nnoremap d D
+nnoremap v p
+nnoremap <space> dd
+inoremap <c-space> <esc>
+nnoremap <c-space> a
+inoremap {<CR> {<CR>}<Esc>i<CR><Esc>ki<Tab>
+nnoremap <silent> w :set relativenumber!<CR>
+nnoremap <Tab> i
+nnoremap <CR> i<CR>
+nnoremap <C-Down> <nop>
+nnoremap <C-r> <C-y>
+nnoremap t :t.<CR>
+nmap     clear 1q 9999D
+inoremap <c-f> <c-n>
+nnoremap sh :sh<CR>
+nnoremap ss :w<CR>
+nnoremap d diw
+map i <nop>
+nnoremap cp :%y+<CR> 
+
+" Nagivate between splits window
+nnoremap <c-w> <c-w><c-w>
+
+" Moving through the editor
+
+nnoremap <s-Up>   <c-y>
+nnoremap <s-Down> <c-e>
+
+" ---------------------------------------------------------
+" COMPETITIVE PROGRAMMING TEMPLATE                        |
+" --------------------------------------------------------- 
+
+imap STAR #include <bits/stdc++.h><CR><CR>using namespace std; <CR>
+\ <CR>#define fi                  first
+\ <CR>#define sec                 second
+\ <CR>#define vi                  vector<int>
+\ <CR>#define pb                  push_back
+\ <CR>#define mp                  make_pair
+\ <CR>#define debug(x)            cout << x << "\n";
+\ <CR>#define all(cont)           cont.begin(), cont.end()
+\ <CR>#define forn(i, n)          for(int i=0; i<int(n); i++)
+\ <CR>#define fori(i, n, index)   for(int i=index; i<int(n); i++)
+\ <CR>#define rfor(i, r)          for(auto& i:r)
+\ <CR><CR>int main() {<CR>ios_base::sync_with_stdio(false);
+\ <CR>cin.tie(NULL);
+\ <CR>freopen("in.txt", "r", stdin);<CR><CR>return 0;<Up><Tab>
