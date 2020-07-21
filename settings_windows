@@ -9,7 +9,7 @@
 " Tip: How find vimrc folder in linux: edit $HOME/.vimrc
 
 syntax on
-colo default
+color default
 set syntax=cpp
 
 " ---------------------------------------------------------
@@ -23,6 +23,7 @@ set backspace+=start
 " ---------------------------------------------------------
 " TAB CONFIGURATIONS                                      |
 " --------------------------------------------------------- 
+
 
 set tabstop=4 
 set shiftwidth=4  
@@ -39,8 +40,7 @@ set guioptions-=T  "remove toolbar                  GVIM settings
 set guioptions-=r  "remove right-hand scroll bar    GVIM settings
 set guioptions-=L  "remove left-hand scroll bar     GVIM setting
 
-set clipboard=unnamed
-set clipboard=unnamedplus
+
 
 " GVIM
 
@@ -52,7 +52,6 @@ set noswapfile        " avoid boring message about swap file bla bla bla..
 set autoindent           
 set smartindent     
 set showcmd               
-set showmode!         " disable showmode because bar visual plugin           
 set background=light
 
 " ---------------------------------------------------------
@@ -90,8 +89,8 @@ nnoremap <c-w> <c-w><c-w>
 
 " Moving through the editor
 
-nnoremap <s-Up>   <c-y>
-nnoremap <s-Down> <c-e>
+nmap <s-Up>   <c-y>
+nmap <s-Down> <c-e>
 
 " ---------------------------------------------------------
 " COMPETITIVE PROGRAMMING TEMPLATE                        |
