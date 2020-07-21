@@ -34,8 +34,17 @@ set expandtab
 " MISCELLANEOUS                                           |
 " --------------------------------------------------------- 
 
+"set guioptions-=m  "remove menu bar                GVIM settings
+set guioptions-=T  "remove toolbar                  GVIM settings
+set guioptions-=r  "remove right-hand scroll bar    GVIM settings
+set guioptions-=L  "remove left-hand scroll bar     GVIM setting
+
 set clipboard=unnamed
 set clipboard=unnamedplus
+
+" GVIM
+
+set guifont=Consolas:h14:b
 
 set number      
 set autochdir         " allow the shell to open in the current directory path of the file
@@ -72,7 +81,9 @@ nnoremap sh :sh<CR>
 nnoremap ss :w<CR>
 nnoremap d diw
 map i <nop>
-nnoremap cp :%y+<CR> 
+nnoremap cp :%y+<CR>
+imap forl for(int i=0; i<n; i++) {<CR> <Tab>
+imap forr for(int i=n-1; i>=0; i--) {<CR> <Tab>
 
 " Nagivate between splits window
 nnoremap <c-w> <c-w><c-w>
@@ -86,16 +97,14 @@ nnoremap <s-Down> <c-e>
 " COMPETITIVE PROGRAMMING TEMPLATE                        |
 " --------------------------------------------------------- 
 
-imap STAR #include <bits/stdc++.h><CR><CR>using namespace std; <CR>
-\ <CR>#define fi                  first
+imap STAR #include <bits/stdc++.h><CR><CR>using namespace std;
+\ <CR><CR>#define fi                  first
 \ <CR>#define sec                 second
 \ <CR>#define vi                  vector<int>
 \ <CR>#define pb                  push_back
 \ <CR>#define mp                  make_pair
 \ <CR>#define debug(x)            cout << x << "\n";
 \ <CR>#define all(cont)           cont.begin(), cont.end()
-\ <CR>#define forn(i, n)          for(int i=0; i<int(n); i++)
-\ <CR>#define fori(i, n, index)   for(int i=index; i<int(n); i++)
 \ <CR>#define rfor(i, r)          for(auto& i:r)
 \ <CR><CR>int main() {<CR>ios_base::sync_with_stdio(false);
 \ <CR>cin.tie(NULL);
