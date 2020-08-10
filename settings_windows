@@ -111,6 +111,7 @@ nmap <s-Down> <c-e>
 imap STAR #include <bits/stdc++.h><CR><CR>using namespace std;
 \ <CR><CR>#define fi                  first
 \ <CR>#define sec                 second
+\ <CR>#define ll                  long long
 \ <CR>#define vi                  vector<int>
 \ <CR>#define pb                  push_back
 \ <CR>#define mp                  make_pair
