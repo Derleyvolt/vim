@@ -2,27 +2,18 @@
 " |                                            General Custom Settings                                    |
 " =========================================================================================================
 
-
-" ---------------------------------------------------------
-" VIM SOME COMMANDS                                       |
-" --------------------------------------------------------- 
-
-" :tabnew filename.. ex: tabnew in.txt
-" 
-"
-"
-"
-
-
 " ---------------------------------------------------------
 " Vundle and Plugins                                      |
 " --------------------------------------------------------- 
 
 " Tip: How find vimrc folder in linux: edit $HOME/.vimrc
 
+map <F9> :!g++ -g % -o %:r && %:r <CR>
+map <F5> :!g++ -g % -o %:r <CR>
+
+set syntax=cpp
 syntax on
 color default
-set syntax=cpp
 
 " ---------------------------------------------------------
 " ALLOW BACKSPACE IN INSERT MODE (because linux terminal) |
@@ -35,7 +26,6 @@ set backspace+=start
 " ---------------------------------------------------------
 " TAB CONFIGURATIONS                                      |
 " --------------------------------------------------------- 
-
 
 set tabstop=4 
 set shiftwidth=4  
@@ -52,12 +42,9 @@ set guioptions-=T  "remove toolbar                  GVIM settings
 set guioptions-=r  "remove right-hand scroll bar    GVIM settings
 set guioptions-=L  "remove left-hand scroll bar     GVIM setting
 
-
-
 " GVIM
 
 set guifont=Consolas:h14:b
-
 set number      
 set autochdir         " allow the shell to open in the current directory path of the file
 set noswapfile        " avoid boring message about swap file bla bla bla..
@@ -114,10 +101,11 @@ imap STAR #include <bits/stdc++.h><CR><CR>using namespace std;
 \ <CR>#define ll                  long long
 \ <CR>#define vi                  vector<int>
 \ <CR>#define pb                  push_back
-\ <CR>#define mp                  make_pair
-\ <CR>#define debug(x)            cout << x << "\n";
-\ <CR>#define all(cont)           cont.begin(), cont.end()
+\ <CR>#define d(x)                cout << x << "\n"
+\ <CR>#define all(cont)           cont.begin(),cont.end()
 \ <CR>#define rfor(i, r)          for(auto& i:r)
+\ <CR>#define FOR(n, i)           for(int i=0;i<n;i++)
+\ <CR>#define MAXN                1000010 
 \ <CR><CR>int main() {<CR>ios_base::sync_with_stdio(false);
 \ <CR>cin.tie(NULL);
 \ <CR>freopen("in.txt", "r", stdin);<CR><CR>return 0;<Up><Tab>
