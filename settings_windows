@@ -3,17 +3,44 @@
 " =========================================================================================================
 
 " ---------------------------------------------------------
-" Vundle and Plugins                                      |
+" Vundle and Plugins - B E G I N -                        |
 " --------------------------------------------------------- 
 
 " Tip: How find vimrc folder in linux: edit $HOME/.vimrc
 
+set nocompatible 
+filetype off
+syntax off
+
+set rtp+=$HOME/.vim/bundle/Vundle.vim/
+call vundle#begin('$HOME/.vim/bundle/')
+
+" let Vundle manage Vundle, required
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'bling/vim-airline'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'preservim/nerdtree'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" ---------------------------------------------------------
+" Vundle and Plugins - E N D -                            |
+" --------------------------------------------------------- 
+
+syntax on
+colorscheme molokai
+
 map <F9> :!g++ -g % -o %:r && %:r <CR>
 map <F5> :!g++ -g % -o %:r <CR>
 
-set syntax=cpp
-syntax on
-color default
+" Nerdtree Toggle
+nnoremap <silent> nn :NERDTreeToggle<CR>
+
+" Nerd Tree size
+:let g:NERDTreeWinSize=25
 
 " ---------------------------------------------------------
 " ALLOW BACKSPACE IN INSERT MODE (because linux terminal) |
@@ -37,7 +64,7 @@ set expandtab
 " MISCELLANEOUS                                           |
 " --------------------------------------------------------- 
 
-"set guioptions-=m  "remove menu bar                GVIM settings
+set guioptions-=m  "remove menu bar                 GVIM settings
 set guioptions-=T  "remove toolbar                  GVIM settings
 set guioptions-=r  "remove right-hand scroll bar    GVIM settings
 set guioptions-=L  "remove left-hand scroll bar     GVIM setting
@@ -50,8 +77,10 @@ set autochdir         " allow the shell to open in the current directory path of
 set noswapfile        " avoid boring message about swap file bla bla bla..
 set autoindent           
 set smartindent     
-set showcmd               
-set background=light
+set showcmd           
+set showmode!        " disable showmode because bar visual plugin
+" it can to cause conflict with colorscheme plugin
+" set background=light
 
 " ---------------------------------------------------------
 " CUSTOM KEY MAPPINGS                                     |
