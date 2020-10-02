@@ -3,7 +3,7 @@
 " =========================================================================================================
 
 " ---------------------------------------------------------
-" Vundle and Plugins - B E G I N -                        |
+" Vundle and Plugins                                      |
 " --------------------------------------------------------- 
 
 " Tip: How find vimrc folder in linux: edit $HOME/.vimrc
@@ -19,6 +19,7 @@ call vundle#begin('$HOME/.vim/bundle/')
 
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'preservim/nerdtree'
@@ -26,12 +27,10 @@ Plugin 'preservim/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" ---------------------------------------------------------
-" Vundle and Plugins - E N D -                            |
-" --------------------------------------------------------- 
+syntax enable 
+set background=light
+colorscheme solarized
 
-syntax on
-colorscheme molokai
 
 map <F9> :!g++ -g % -o %:r && %:r <CR>
 map <F5> :!g++ -g % -o %:r <CR>
@@ -64,14 +63,15 @@ set expandtab
 " MISCELLANEOUS                                           |
 " --------------------------------------------------------- 
 
-set guioptions-=m  "remove menu bar                 GVIM settings
+set guioptions-=m  "remove menu bar                GVIM settings
 set guioptions-=T  "remove toolbar                  GVIM settings
 set guioptions-=r  "remove right-hand scroll bar    GVIM settings
 set guioptions-=L  "remove left-hand scroll bar     GVIM setting
 
 " GVIM
 
-set guifont=Consolas:h14:b
+set guifont=Ubuntu_Mono:h12:b
+" set guifont=Consolas:h13:b
 set number      
 set autochdir         " allow the shell to open in the current directory path of the file
 set noswapfile        " avoid boring message about swap file bla bla bla..
@@ -85,6 +85,10 @@ set showmode!        " disable showmode because bar visual plugin
 " ---------------------------------------------------------
 " CUSTOM KEY MAPPINGS                                     |
 " --------------------------------------------------------- 
+
+" some useful keys
+" gt = go to next tab
+" tabnew in.txt
 
 nnoremap r A
 nnoremap q G
@@ -106,6 +110,7 @@ nmap     clear 1q 9999D
 inoremap <c-f> <c-n>
 nnoremap sh :sh<CR>
 nnoremap ss :w<CR>
+nnoremap input :tabnew in.txt<CR>
 nnoremap d diw
 map i <nop>
 nnoremap cp :%y+<CR>
