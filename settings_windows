@@ -21,11 +21,15 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
+Plugin 'OmniCppComplete'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'preservim/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
+filetype on " auto detect filetype
 
 syntax enable 
 set background=light
@@ -70,7 +74,7 @@ set guioptions-=L  "remove left-hand scroll bar     GVIM setting
 
 " GVIM
 
-set guifont=Ubuntu_Mono:h12:b
+set guifont=Consolas:h14
 " set guifont=Consolas:h13:b
 set number      
 set autochdir         " allow the shell to open in the current directory path of the file
