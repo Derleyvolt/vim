@@ -8,6 +8,10 @@
 
 " Tip: How find vimrc folder in linux: edit $HOME/.vimrc
 
+" Isso aqui informa o vim onde encontrar o python.dll, sem isso alguns
+" plugins, como o YouCompleteMe, não funcionam..
+let &pythonthreedll = 'C:\Users\Derley\AppData\Local\Programs\Python\Python39-32\Python39.dll'
+
 set nocompatible 
 filetype off
 syntax off
@@ -21,16 +25,26 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
-Plugin 'dense-analysis/ale'   
+" é um litting, é facilmente instalado pelo Vundle sem necessidade de outras
+" coisas.. diferente do YouCompleteMe
+"Plugin 'dense-analysis/ale'   
 Plugin 'jiangmiao/auto-pairs' 
-Plugin 'flazz/vim-colorschemes'
+"Plugin 'flazz/vim-colorschemes'
+Plugin 'valloric/youcompleteme'
 Plugin 'preservim/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+"auto detect filetype
 filetype on
 
+" YouCompleteMe need it
+set encoding=utf-8
+" Disable preview windows from YouCompleteMe
+set completeopt-=preview
+
+" Syntax highligh
 syntax enable 
 set background=light
 colorscheme solarized
