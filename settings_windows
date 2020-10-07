@@ -21,20 +21,19 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
-Plugin 'OmniCppComplete'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'jiangmiao/auto-pairs'
+Plugin 'dense-analysis/ale'   
+Plugin 'jiangmiao/auto-pairs' 
 Plugin 'flazz/vim-colorschemes'
 Plugin 'preservim/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-filetype on " auto detect filetype
+
+filetype on
 
 syntax enable 
 set background=light
 colorscheme solarized
-
 
 map <F9> :!g++ -g % -o %:r && %:r <CR>
 map <F5> :!g++ -g % -o %:r <CR>
@@ -103,7 +102,7 @@ nnoremap v p
 nnoremap <space> dd
 inoremap <c-space> <esc>
 nnoremap <c-space> a
-inoremap {<CR> {<CR>}<Esc>i<CR><Esc>ki<Tab>
+"inoremap {<CR> {<CR>}<Esc>i<CR><Esc>ki<Tab>
 nnoremap <silent> w :set relativenumber!<CR>
 nnoremap <Tab> i
 nnoremap <CR> i<CR>
