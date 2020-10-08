@@ -34,7 +34,7 @@ import subprocess
 # Settings é sempre chamado pelo YCM, é necessário apenas setar o caminho do bits/stdc++.h
 def Settings( **kwargs ):
   return {
-    'flags': [ '-x', 'c++', '-Wall', '-Wextra', '-Werror', '-isystem', 'C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/mingw32' ]
+    'flags': [ '-x', 'c++', '-Wall', '-Wextra', '-Werror', '-isystem', 'C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/mingw32' ],
   }
 
 DIR_OF_THIS_SCRIPT = p.abspath( p.dirname( __file__ ) )
