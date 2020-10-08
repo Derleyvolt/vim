@@ -25,7 +25,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
-" é um litting, é facilmente instalado pelo Vundle sem necessidade de outras
+" É um litting. É facilmente instalado pelo Vundle sem necessidade de outras
 " coisas.. diferente do YouCompleteMe
 "Plugin 'dense-analysis/ale'   
 Plugin 'jiangmiao/auto-pairs' 
@@ -43,6 +43,8 @@ filetype on
 set encoding=utf-8
 " Disable preview windows from YouCompleteMe
 set completeopt-=preview
+" settings path to find .ycm_extra_config.py file
+let g:ycm_global_ycm_extra_conf = 'C:\Users\Derley\.vim\bundle\YouCompleteMe\.ycm_extra_conf.py'
 
 " Syntax highligh
 syntax enable 
