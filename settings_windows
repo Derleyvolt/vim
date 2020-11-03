@@ -51,7 +51,7 @@ syntax enable
 set background=light
 colorscheme solarized
 
-map <F9> :!g++ -g % -o %:r && %:r <CR>
+map <F9> :!g++ -g -std=c++17 % -o %:r && %:r <CR>
 map <F5> :!g++ -g % -o %:r <CR>
 
 " Nerdtree Toggle
