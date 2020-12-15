@@ -17,7 +17,9 @@ filetype off
 syntax off
 
 set rtp+=$HOME/.vim/bundle/Vundle.vim/
+"set rtp+=~/vimfiles/bundle/Vundle.vim
 call vundle#begin('$HOME/.vim/bundle/')
+"call vundle#begin('~/vimfiles/bundle')
 
 " let Vundle manage Vundle, required
 
@@ -27,11 +29,9 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 " É um litting. É facilmente instalado pelo Vundle sem necessidade de outras
 " coisas.. diferente do YouCompleteMe
-"Plugin 'dense-analysis/ale'   
 Plugin 'jiangmiao/auto-pairs' 
-"Plugin 'flazz/vim-colorschemes'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'valloric/youcompleteme'
-Plugin 'preservim/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -48,8 +48,8 @@ let g:ycm_global_ycm_extra_conf = 'C:\Users\Derley\.vim\bundle\YouCompleteMe\.yc
 
 " Syntax highligh
 syntax enable 
-set background=light
-colorscheme solarized
+set background=dark
+colorscheme gruvbox 
 
 map <F9> :!g++ -g -std=c++17 % -o %:r && %:r <CR>
 map <F5> :!g++ -g % -o %:r <CR>
@@ -89,7 +89,7 @@ set guioptions-=L  "remove left-hand scroll bar     GVIM setting
 
 " GVIM
 
-set guifont=Consolas:h14
+set guifont=Consolas:h16
 " set guifont=Consolas:h13:b
 set number      
 set autochdir         " allow the shell to open in the current directory path of the file
@@ -132,9 +132,11 @@ nnoremap ss :w<CR>
 nnoremap input :tabnew in.txt<CR>
 nnoremap d diw
 map i <nop>
+map s <nop>
+map c <nop>
 nnoremap cp :%y+<CR>
-imap forl for(int i=0; i<n; i++) {<CR> <Tab>
-imap forr for(int i=n-1; i>=0; i--) {<CR> <Tab>
+" copy word
+nnoremap cc yaw 
 
 " Nagivate between splits window
 nnoremap <c-w> <c-w><c-w>
@@ -144,21 +146,13 @@ nnoremap <c-w> <c-w><c-w>
 nmap <s-Up>   <c-y>
 nmap <s-Down> <c-e>
 
+inoremap READ freopen("in.txt", "r", stdin);
+
 " ---------------------------------------------------------
 " COMPETITIVE PROGRAMMING TEMPLATE                        |
 " --------------------------------------------------------- 
 
 imap STAR #include <bits/stdc++.h><CR><CR>using namespace std;
-\ <CR><CR>#define fi                  first
-\ <CR>#define sec                 second
-\ <CR>#define ll                  long long
-\ <CR>#define vi                  vector<int>
-\ <CR>#define pb                  push_back
-\ <CR>#define d(x)                cout << x << "\n"
-\ <CR>#define all(cont)           cont.begin(),cont.end()
-\ <CR>#define rfor(i, r)          for(auto& i:r)
-\ <CR>#define FOR(n, i)           for(int i=0;i<n;i++)
-\ <CR>#define MAXN                1000010 
 \ <CR><CR>int main() {<CR>ios_base::sync_with_stdio(false);
 \ <CR>cin.tie(NULL);
 \ <CR>freopen("in.txt", "r", stdin);<CR><CR>return 0;<Up><Tab>
