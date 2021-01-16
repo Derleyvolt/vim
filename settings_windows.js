@@ -153,7 +153,7 @@ nmap <s-Down> <c-e>
 inoremap READ freopen("in.txt", "r", stdin);
 
 " ---------------------------------------------------------
-" COMPETITIVE PROGRAMMING TEMPLATE                        |
+"            COMPETITIVE PROGRAMMING TEMPLATE             |
 " --------------------------------------------------------- 
 
 imap test #include <bits/stdc++.h><CR><CR>using namespace std;<CR><CR>#define ll  long long<CR>#define ii  array<int,2><CR><CR>int main() {<CR>
