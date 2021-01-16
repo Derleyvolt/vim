@@ -48,8 +48,11 @@ let g:ycm_global_ycm_extra_conf = 'C:\Users\Derley\.vim\bundle\YouCompleteMe\.yc
 
 " Syntax highligh
 syntax enable 
-set background=dark
-colorscheme gruvbox 
+"set background=dark
+"colorscheme gruvbox 
+
+colorscheme default 
+set background=light
 
 map <F9> :!g++ -g -std=c++17 % -o %:r && %:r <CR>
 map <F5> :!g++ -g % -o %:r <CR>
@@ -89,8 +92,8 @@ set guioptions-=L  "remove left-hand scroll bar     GVIM setting
 
 " GVIM
 
-set guifont=Consolas:h16
-" set guifont=Consolas:h13:b
+"set guifont=Consolas-Bold:h16
+set guifont=Consolas:h14:b
 set number      
 set autochdir         " allow the shell to open in the current directory path of the file
 set noswapfile        " avoid boring message about swap file bla bla bla..
@@ -125,7 +128,8 @@ nnoremap <CR> i<CR>
 nnoremap <C-Down> <nop>
 nnoremap <C-r> <C-y>
 nnoremap t :t.<CR>
-nmap     clear 1q 9999D
+nmap     cls 1q 9999D
+nmap     CLS 1q 9999D
 inoremap <c-f> <c-n>
 nnoremap sh :sh<CR>
 nnoremap ss :w<CR>
@@ -152,7 +156,8 @@ inoremap READ freopen("in.txt", "r", stdin);
 " COMPETITIVE PROGRAMMING TEMPLATE                        |
 " --------------------------------------------------------- 
 
-imap STAR #include <bits/stdc++.h><CR><CR>using namespace std;
-\ <CR><CR>int main() {<CR>ios_base::sync_with_stdio(false);
-\ <CR>cin.tie(NULL);
-\ <CR>freopen("in.txt", "r", stdin);<CR><CR>return 0;<Up><Tab>
+imap test #include <bits/stdc++.h><CR><CR>using namespace std;<CR><CR>#define ll  long long<CR>#define ii  array<int,2><CR><CR>int main() {<CR>
+\ios_base::sync_with_stdio(false);<CR>cin.tie(NULL);<CR><CR>return 0;<CR><c-space> 9999q
+\r<CR><CR>/* stuff you should look for <CR>int overflow, array bounds <CR>special cases(n=1?) <CR>do something instead of nothing atay organized <CR>
+\WRITE STUFF DOWN <CR>DON'T GET STUCK ON ONE APPROACH<CR>/
+\<esc>11q<TAB><TAB>
