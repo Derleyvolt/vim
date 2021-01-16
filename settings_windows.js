@@ -153,11 +153,11 @@ nmap <s-Down> <c-e>
 inoremap READ freopen("in.txt", "r", stdin);
 
 " ---------------------------------------------------------
-"            COMPETITIVE PROGRAMMING TEMPLATE             |
+" COMPETITIVE PROGRAMMING TEMPLATE                        |
 " --------------------------------------------------------- 
 
-imap test #include <bits/stdc++.h><CR><CR>using namespace std;<CR><CR>#define ll  long long<CR>#define ii  array<int,2><CR><CR>int main() {<CR>
+imap test #include <bits/stdc++.h><CR><CR>using namespace std;<CR><CR>#define ll  long long<CR>#define vi  vector<int><CR>#define ii  array<int,2><CR><CR>int main() {<CR>
 \ios_base::sync_with_stdio(false);<CR>cin.tie(NULL);<CR><CR>return 0;<CR><c-space> 9999q
-\r<CR><CR>/* stuff you should look for <CR>int overflow, array bounds <CR>special cases(n=1?) <CR>do something instead of nothing atay organized <CR>
-\WRITE STUFF DOWN <CR>DON'T GET STUCK ON ONE APPROACH<CR>/
-\<esc>11q<TAB><TAB>
+\r<CR><CR>/* STUFF YOU SHOULD LOOK FOR<CR>   int overflow, array bounds <CR>special cases(n=1?) <CR>do something instead of nothing atay organized <CR>
+\write stuff down<CR>don't get stuck on one approach<CR>/
+\<esc>12q<TAB><TAB>
