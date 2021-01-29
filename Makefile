@@ -1,11 +1,7 @@
 CXX = g++
-CXXFLAGS = -std=c++17 -o
-OUT = *
-FILES = $(OUT).cpp
-RUN = ./$(OUT)
+CXXFLAGS = -std=c++17 -o -Wall
 
-$(OUT): build
-	$(CXX) $(CXXFLAGS) $(OUT) $(FILES)
-
-build:
-	./$(OUT)
+program:
+	$(CXX) $(CXXFLAGS) $(program) $(program).cpp
+	
+	
