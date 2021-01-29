@@ -1,9 +1,11 @@
-CXX   = g++
-OUT   = *
+CXX = g++
+CXXFLAGS = -std=c++17 -o
+OUT = *
 FILES = $(OUT).cpp
+RUN = ./$(OUT)
 
-build: $(FILES) run
-	$(CXX) -o $(OUT) $(FILES)
+$(OUT): build
+	$(CXX) $(CXXFLAGS) $(OUT) $(FILES)
 
-run: 
-	./OUT  
+build:
+	./$(OUT)
