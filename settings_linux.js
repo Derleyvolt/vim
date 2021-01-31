@@ -83,6 +83,7 @@ set background=dark
 
 nnoremap r A
 nnoremap q G
+vnoremap q G
 nnoremap e ^i
 nnoremap b u
 nnoremap d D
@@ -94,7 +95,7 @@ inoremap <c-space> <esc>
 " nnoremap <c-space> a
 "inoremap <c-@> <esc>
 nnoremap <c-@> a
-inoremap {<CR> {<CR>}<Esc>i<CR><Esc>ki<Tab>
+"inoremap {<CR> {<CR>}<Esc>i<CR><Esc>ki<Tab>
 nnoremap <silent> w :set relativenumber!<CR>
 nnoremap <Tab> i
 nnoremap <CR> i<CR>
@@ -134,13 +135,22 @@ nnoremap <silent> nn :NERDTreeToggle<CR>
 inoremap READ freopen("in.txt", "r", stdin);
 
 " ---------------------------------------------------------
-" COMPETITIVE PROGRAMMING TEMPLATE                        |
+" COMMENT AND UNCOMMENT BLOCK                             |
+" --------------------------------------------------------- 
+
+" comment:    CTRL-SPACE --> CTRL-V --> lines + q (selecione as linhas a serem comentadas) --> digite // --> esc + esc
+
+" uncomment:  CTRL-SPACE --> CTRL-V --> lines + q (selecione as letras em coluna a serem apagadas) --> x
+
+" ---------------------------------------------------------
+"             COMPETITIVE PROGRAMMING TEMPLATE            |
 " --------------------------------------------------------- 
 
 imap WWW #include <bits/stdc++.h><CR><CR>using namespace std;<CR><CR>#define ll  long long<CR>#define vi  vector<int><CR>#define ii  array<int,2><CR><CR>int main() {<CR>
 \ios_base::sync_with_stdio(false);<CR>cin.tie(NULL);<CR><CR>return 0;<CR><c-space> 9999q
-\r<CR><CR>/* STUFF YOU SHOULD LOOK FOR<CR>   int overflow, array bounds <CR>special cases(n=1?) <CR>do something instead of nothing atay organized <CR>
+\r<CR><CR>/* STUFF YOU SHOULD LOOK FOR<CR>   int overflow, array bounds <CR>special cases(n=1?) <CR>
 \search for patterns **<CR>
 \think about everything as eq and inq<CR>
-\write stuff down<CR>don't get stuck on one approach<CR>/
+\read all test cases before typing code<CR>don't get stuck on one approach<CR>
+\write TLE code then optimize it<CR>take 2 minute to find tricky test case<CR>/
 \<esc>12q<TAB><TAB>
