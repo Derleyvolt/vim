@@ -139,7 +139,7 @@ inoremap READ freopen("in.txt", "r", stdin);
 " COMMENT AND UNCOMMENT BLOCK                             |
 " --------------------------------------------------------- 
 
-" comment:    CTRL-SPACE --> CTRL-V --> lines + q (selecione as linhas a serem comentadas) --> digite // --> esc + esc
+" comment:    CTRL-SPACE --> CTRL-V --> lines + q (selecione as linhas a serem comentadas) --> SHIFT-i --> digite // --> esc + esc
 
 " uncomment:  CTRL-SPACE --> CTRL-V --> lines + q (selecione as letras em coluna a serem apagadas) --> x
 
