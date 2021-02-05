@@ -35,7 +35,7 @@ import subprocess
 # '-isystem', 'C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/mingw32'
 def Settings( **kwargs ):
   return {
-    'flags': [ '-x', 'c++', '-std=c++17', '-Wall', '-Wextra', '-Werror', '-isystem', 'C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/mingw32' ],
+    'flags': [ '-x', 'c++', '-std=c++17', '-Wall', '-Wextra', '-isystem', 'C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/mingw32' ],
   }
 
 DIR_OF_THIS_SCRIPT = p.abspath( p.dirname( __file__ ) )
