@@ -150,7 +150,9 @@ inoremap READ freopen("in.txt", "r", stdin);
 
 imap WWW #include <bits/stdc++.h><CR><CR>using namespace std;<CR><CR>#define ll  long long<CR>#define vi  vector<int><CR>#define ii  array<int,2><CR><CR>int main() {<CR>
 \ios_base::sync_with_stdio(false);<CR>cin.tie(NULL);<CR><CR>return 0;<CR><c-space> 9999q
-\r<CR><CR>/* STUFF YOU SHOULD LOOK FOR<CR>   int overflow, array bounds <CR>special cases(n=1?) <CR>
+\r<CR><CR>/* STUFF YOU SHOULD LOOK FOR<CR>   int overflow, array bounds <CR>
+\enumerate especial cases<CR>
+\special cases(n=1?)<CR>
 \search for patterns **<CR>
 \think about everything as eq and inq<CR>
 \read all test cases before typing code<CR>don't get stuck on one approach<CR>
