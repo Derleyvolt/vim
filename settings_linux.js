@@ -112,6 +112,7 @@ nnoremap d diw
 map i <nop>
 map s <nop>
 map c <nop>
+map h <nop> "sh command conflict
 
 " clear editor
 
