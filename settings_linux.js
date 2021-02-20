@@ -1,5 +1,4 @@
 " =========================================================================================================
-" |                                            General Custom Settings                                    |
 " =========================================================================================================
 
 " ---------------------------------------------------------
@@ -24,13 +23,13 @@ Plugin 'VundleVim/Vundle.vim'
 " to delete a plugin remove it here and run :PluginClean
 
 Plugin 'bling/vim-airline'
-Plugin 'flazz/vim-colorschemes'
+"Plugin 'flazz/vim-colorschemes'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'valloric/youcompleteme'
 
 " press r to refresh current directory or R to refresh root directory.
 " press m to open menu in NERDtree
-"Plugin 'preservim/nerdtree'
+Plugin 'preservim/nerdtree'
 " add plugins before this
 
 call vundle#end()
@@ -76,7 +75,14 @@ set autoindent
 set smartindent     
 set showcmd               
 set showmode!         " disable showmode because bar visual plugin           
-set background=dark       
+set hlsearch          " enable highlight word
+
+" FOLDING CODE
+
+"z+a to fold block
+
+set      foldmethod     =indent
+setlocal foldlevelstart =99
 
 " ---------------------------------------------------------
 " CUSTOM KEY MAPPINGS                                     |
@@ -108,11 +114,14 @@ nnoremap sh :sh<CR>
 nnoremap ss :w<CR>
 nnoremap input : tabnew in.txt<CR>
 nnoremap d diw
+" ff = folding block
+nnoremap ff za
 
 map i <nop>
 map s <nop>
 map c <nop>
-map h <nop> "sh command conflict
+map h <nop>
+map f <nop>
 
 " clear editor
 
@@ -137,15 +146,7 @@ nnoremap <silent> nn :NERDTreeToggle<CR>
 inoremap READ freopen("in.txt", "r", stdin);
 
 " ---------------------------------------------------------
-" COMMENT AND UNCOMMENT BLOCK                             |
-" --------------------------------------------------------- 
-
-" comment:    CTRL-SPACE --> CTRL-V --> lines + q (selecione as linhas a serem comentadas) --> SHIFT-i --> digite // --> esc + esc
-
-" uncomment:  CTRL-SPACE --> CTRL-V --> lines + q (selecione as letras em coluna a serem apagadas) --> x
-
-" ---------------------------------------------------------
-"             COMPETITIVE PROGRAMMING TEMPLATE            |
+" COMPETITIVE PROGRAMMING TEMPLATE                        |
 " --------------------------------------------------------- 
 
 imap WWW #include <bits/stdc++.h><CR><CR>using namespace std;<CR><CR>#define ll  long long<CR>#define vi  vector<int><CR>#define ii  array<int,2><CR><CR>int main() {<CR>
@@ -154,6 +155,7 @@ imap WWW #include <bits/stdc++.h><CR><CR>using namespace std;<CR><CR>#define ll 
 \enumerate especial cases<CR>
 \special cases(n=1?)<CR>
 \search for patterns **<CR>
+\try to find a counterexample<CR>
 \think about everything as eq and inq<CR>
 \read all test cases before typing code<CR>don't get stuck on one approach<CR>
 \write TLE code then optimize it<CR>take 2 minute to find tricky test case<CR>/
