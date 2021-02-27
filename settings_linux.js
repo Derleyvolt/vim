@@ -146,6 +146,19 @@ nnoremap <silent> nn :NERDTreeToggle<CR>
 inoremap READ freopen("in.txt", "r", stdin);
 
 " ---------------------------------------------------------
+" LINUX TERMINAL COLOR                                    |
+" --------------------------------------------------------- 
+      " Os números são relacionados às paletas
+
+      " 6  = #8E8559
+      " 9  = #E15A20
+      " 10 = #56A68E
+      " 11 = #A7911D
+      " 12 = #C0B062
+      " 13 = #C0B062
+      " 14 = #414D4B
+
+" ---------------------------------------------------------
 " COMPETITIVE PROGRAMMING TEMPLATE                        |
 " --------------------------------------------------------- 
 
