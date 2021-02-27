@@ -140,7 +140,7 @@ nmap <s-Down> <c-e>
 " nagivate between splits window
 nnoremap <c-w> <c-w><c-w>
 
-" NerdTree window toggle
+" nerdtree window toggle
 nnoremap <silent> nn :NERDTreeToggle<CR>
 
 inoremap READ freopen("in.txt", "r", stdin);
@@ -148,9 +148,10 @@ inoremap READ freopen("in.txt", "r", stdin);
 " ---------------------------------------------------------
 " LINUX TERMINAL COLOR                                    |
 " --------------------------------------------------------- 
-      " Os números são relacionados às paletas
-
-      " 6  = #8E8559
+      " os números são relacionados às paletas
+      
+      " cursor color = [#000000, #8E8559]
+      " 6  = #618067
       " 9  = #E15A20
       " 10 = #56A68E
       " 11 = #A7911D
