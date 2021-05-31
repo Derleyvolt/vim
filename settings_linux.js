@@ -114,14 +114,14 @@ nnoremap sh :sh<CR>
 nnoremap ss :w<CR>
 nnoremap input : tabnew in.txt<CR>
 nnoremap d diw
-" ff = folding block
 nnoremap ff za
 
-map i <nop>
-map s <nop>
-map c <nop>
-map h <nop>
-map f <nop>
+nnoremap i <nop>
+nnoremap ç <nop>
+nnoremap s <nop>
+nnoremap c <nop>
+nnoremap h <nop>
+nnoremap f <nop>
 
 " clear editor
 
@@ -134,30 +134,20 @@ nnoremap cp :%y+<CR>
 
 " moving through the editor
 
-nmap <s-Up>   <c-y>
+nmap <s-Up> <c-y>
 nmap <s-Down> <c-e>
+
+" Move line
+nnoremap <A-Up>   :m-2<CR>
+nnoremap <A-Down> :m+<CR>
 
 " nagivate between splits window
 nnoremap <c-w> <c-w><c-w>
 
-" nerdtree window toggle
+" NerdTree window toggle
 nnoremap <silent> nn :NERDTreeToggle<CR>
 
 inoremap READ freopen("in.txt", "r", stdin);
-
-" ---------------------------------------------------------
-" LINUX TERMINAL COLOR                                    |
-" --------------------------------------------------------- 
-      " os números são relacionados às paletas
-      
-      " cursor color = [#000000, #8E8559]
-      " 6  = #618067
-      " 9  = #E15A20
-      " 10 = #56A68E
-      " 11 = #A7911D
-      " 12 = #C0B062
-      " 13 = #C0B062
-      " 14 = #414D4B
 
 " ---------------------------------------------------------
 " COMPETITIVE PROGRAMMING TEMPLATE                        |
