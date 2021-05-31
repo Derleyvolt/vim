@@ -58,9 +58,9 @@ set backspace+=start
 " TAB CONFIGURATIONS                                      |
 " --------------------------------------------------------- 
 
-set tabstop=5 
-set shiftwidth=5  
-set softtabstop=5  
+set tabstop=4
+set shiftwidth=4  
+set softtabstop=4  
 set smarttab      
 set expandtab       
 
