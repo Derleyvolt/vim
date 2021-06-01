@@ -142,6 +142,10 @@ nnoremap cp :%y+<CR>
 " copy word
 nnoremap cc yaw 
 
+" Move line
+nnoremap <A-Up>   :m-2<CR>
+nnoremap <A-Down> :m+<CR>
+
 " Nagivate between splits window
 nnoremap <c-w> <c-w><c-w>
 
